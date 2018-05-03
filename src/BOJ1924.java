@@ -25,6 +25,5 @@ public class BOJ1924 {
 		
 		
 		
-		
 	}
 }

@@ -23,10 +23,6 @@ public class Stack {
 		if(stack.isEmpty()) System.out.println("-"+1);
 		else System.out.println(stack.get(stack.size()-1));
 	}
-	public void size(ArrayList<Integer> stack) {
-		if(stack.isEmpty()) System.out.println(0);
-		else System.out.println(stack.size());
-	}
 	
 	public static void main(String args[]) {
 		Stack ob = new Stack();

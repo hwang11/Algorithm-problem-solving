@@ -12,5 +12,6 @@ public class BOJ1904 {
             dp[i]%=15746;
 		}
 		System.out.println(dp[n]);
+		//출력문에서 나눠주면 안되는 이유는 for문을 돌다가 int범위를 넘어갈수있기때문  
 	}
 }

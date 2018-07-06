@@ -1,6 +1,6 @@
 package graph_practice;
 import java.util.*;
-//인접행렬로 구현.
+//bfs,dfs인접행렬로 구현.
 public class BFS {
 	static int n = 0;
 	static int m = 0;

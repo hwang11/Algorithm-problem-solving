@@ -24,8 +24,8 @@ public class BOJ1012_dfs {
 		int t = sc.nextInt();
 		for(int test = 0;test<t;test++) {
 			
-			n = sc.nextInt();
-			m = sc.nextInt();
+			n = sc.nextInt();//가로.
+			m = sc.nextInt();//세로.
 			int count = sc.nextInt();
 			map = new int[n][m];
 			

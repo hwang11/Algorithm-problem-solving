@@ -10,14 +10,13 @@ public class BOJ1654 {
 			a[i] = sc.nextInt();
 		}
 		long left = 1;
-		long right = ;
+		long right = (long) (Math.pow(2,31)-1);
 		long mid = 0;
 		long cnt = 0;
-		long ans = 0;// 231-1
+		long ans = 0;
 		
 		while(left<=right) {
 			mid = (left + right)/2;
-			//System.out.println(mid);
 			cnt = 0;
 			for(int i=0;i<k;i++) {
 				cnt+=a[i]/mid;

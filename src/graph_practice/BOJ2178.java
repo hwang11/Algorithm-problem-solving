@@ -1,6 +1,6 @@
 package graph_practice;
 import java.util.*;
-
+//미로탐색.
 public class BOJ2178 {
 	static int n,m;
 	static int map[][];
@@ -29,23 +29,29 @@ public class BOJ2178 {
 		q.add(new Dot(0,0));
 		
 		while(!q.isEmpty()) {
-			
-			Dot v = q.poll();
-			
-			for(int i=0;i<4;i++) {
-				int mx = v.x + d[i][0];
-				int my = v.y + d[i][1];
-				
-				if(mx<0 || mx>=n || my<0 || my >=m) continue;
-				if(map[mx][my] == 0 || visited[mx][my]) continue;
-
-				q.add(new Dot(mx,my));
-				count ++;
-				visited[mx][my] = true;
+			count ++;
+			int size = q.size();
+			for(int i = 0;i<size;i++) {
+				Dot v = q.poll();
+				if(v.x==n-1 && v.y==m-1) {
+					System.out.println(count);
+		            return;
+				} 
+				for(int j=0;j<4;j++) {
+					int mx = v.x + d[j][0];
+					int my = v.y + d[j][1];
+					
+					if(mx<0 || mx>=n || my<0 || my >=m) continue;
+					if(map[mx][my] == 0 || visited[mx][my]) continue;
+					visited[mx][my] = true;
+					q.add(new Dot(mx,my));
+					
+				}
 			}
+
+			
+
 		}
-		System.out.println(map[2][0]);
-		System.out.println(count);
 		
 	}
 
@@ -55,7 +61,7 @@ class Dot {
 	int x;
 	int y;
 	Dot(int x,int y){
-		x = this.x;
-		y = this.y;
+		this.x = x;
+		this.y = y;
 	}
 }

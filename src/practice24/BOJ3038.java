@@ -1,31 +1,35 @@
 package practice24;
-import java.util.*;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class BOJ3038 {
-	public static void main(String args[]) {
-		Scanner sc = new Scanner(System.in);
-		int test = sc.nextInt();
-		for(int i=0;i<test;i++) {
-			int x = 1;
-			int n = sc.nextInt();
-			HashMap<String,Integer> map = new HashMap();
-			String aa = sc.nextLine();
-			for(int j=0;j<n;j++) {
-				String s = sc.nextLine();
-				String[] words = s.split("\\s");
-				String name = words[0];
-				String kind = words[1];
-				if(map.containsKey(kind)) {
-					map.put(kind, map.get(kind)+1);
-				}
-				else {
-					map.put(kind, 1);
-				}
-			}
-			for(int j:map.values()) {
-				x*=(j+1);
-			}
-			System.out.println((x-1));
-		}
-		
-	}
+    private static StringBuffer sb = new StringBuffer();
+
+    public static void main(String[] args) throws IOException {
+        try (BufferedReader in = new BufferedReader(new InputStreamReader(System.in))) {
+            int N = Integer.parseInt(in.readLine());
+
+            dp(N, 1, N);
+            
+            System.out.println(sb.toString());
+        }
+    }
+
+    public static void dp(int level, int cur, int n) {
+        if (level == 1) {
+            set(cur);
+        } else {
+            int start = (1 << n) - (1 << (n - level + 1));
+            int lmax = (1 << (n - level));
+            set(lmax - cur + 1 + start);
+            dp(level - 1, cur, n);
+            dp(level - 1, cur + (1 << (n - level)), n);
+        }
+    }
+
+    public static void set(int cur) {
+        sb.append(cur).append(' ');
+    }
 }

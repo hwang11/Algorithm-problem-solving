@@ -1,7 +1,7 @@
 package practice25;
 
 import java.util.Scanner;
-
+//더한순간에 오버플로 날수도있어서 계속 나눠줌.
 public class BOJ10844 {
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);

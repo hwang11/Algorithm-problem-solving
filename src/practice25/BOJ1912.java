@@ -1,7 +1,8 @@
 package practice25;
 
 import java.util.Scanner;
-
+//누적합이 음수면, 더해주지 않고. 거기부터 새로dp배열시작.
+//음수면 더해봤자 작아지니까.
 public class BOJ1912 {
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);

@@ -34,7 +34,7 @@ public class Grade {
 		}
 
 	}
-	
+	//index에러남 ㅠ 두번째 테케에서.
 	static class Stu implements Comparable<Stu>{
 		int index;
 		int sum;

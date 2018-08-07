@@ -1,5 +1,5 @@
 package graph_practice;
-
+//단지번호붙이
 import java.util.Arrays;
 import java.util.Scanner;
 

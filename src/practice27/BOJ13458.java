@@ -43,7 +43,7 @@ public class BOJ13458 {
 	        array[i] -= b;
 	 
 	        if (array[i] > 0) {
-	            result += Math.ceil(1.0 * array[i] / c); //반올림.
+	            result += Math.ceil(1.0 * array[i] / c); //반올림. overflow날까봐?
 	        }
 	 
 	    }

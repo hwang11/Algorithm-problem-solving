@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
-
+//순열아닌 조합으로 짜기!
 public class BOJ15686 {
 	static int n,m;
 	static int sum = 0;

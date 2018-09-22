@@ -1,6 +1,5 @@
 package kakao;
 
-import java.util.Scanner;
 
 public class Map {
 	public static String[] map(int n, int[] arr1, int[] arr2) {

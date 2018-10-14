@@ -2,13 +2,13 @@ package Expert;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+//백트래킹, 사각형 그리는 방향, return 조건 유의.
 public class RE2105 {
 	static int n,ans,start_x,start_y;
 	static int map[][];
 	static boolean v[][];
 	static boolean num[];
-	static int dis[][] = {{1,1},{1,-1},{-1,-1},{-1,1}};
+	static int dis[][] = {{1,1},{1,-1},{-1,-1},{-1,1}};//사각형 그리는 순서 우하,좌하,좌상,우상.
 	
 	public static void move(int x,int y,int cnt,int d) {
 		if(d == 4) return;
@@ -21,7 +21,6 @@ public class RE2105 {
 			if(start_x == mx && start_y == my) {
 				
 				if(cnt>ans) {
-					//System.out.println("cnt: "+cnt);
 					ans = cnt;
 				}
 				return;

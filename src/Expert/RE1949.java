@@ -1,7 +1,8 @@
 package Expert;
 
 import java.util.Scanner;
-
+// 백트래킹, 4방향.. 이라서for문으로 해봤지만 재귀2개로 해봐야겠다...
+//유의 할 점은 pre를 사용해야 변경된 값을 저장해서 비교할 수 있다는 것.
 public class RE1949 {
 	static int n,k,ans;
 	static int map[][];

@@ -17,17 +17,19 @@ public class BOJ15649 {
 			if(!v[i]) {
 				v[i] = true;
 				a[d] = i;
+				System.out.println("dfs("+(d+1)+") 호출 d+1: "+(d+1)+" i: "+i);
 				dfs(d+1);
 				v[i] = false;
 			}
 		}
+		System.out.println("모두방문했어  return d: "+d);
 	}
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		n = sc.nextInt();
 		m = sc.nextInt();
-		v = new boolean[10];
-		a = new int[10];
+		v = new boolean[5];
+		a = new int[5];
 		dfs(0);
 		
 	}

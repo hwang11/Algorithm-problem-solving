@@ -1,7 +1,7 @@
 package Expert;
 
 import java.util.Scanner;
-
+//순열ㅂ 배열로 할 생각을 못하고 처음엔 리스트로 생각햇당... 
 public class RE4008 {
 	static int n,ans,min,max;
 	static int c[];

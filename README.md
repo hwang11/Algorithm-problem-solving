@@ -1,4 +1,19 @@
-# 알고리즘 문제 풀이 
+# 알고리즘 문제 풀이   
+### :fire: 1일 1 알고리즘 챌린지
+기간 : 2020. 1. 15 ~   
+목표 : 프로그래머스 고득점 kit 깨기
+
+### 프로그래머스 고득점 kit  
+* 완전탐색  
+:ballot_box_with_check: [모의고사](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/Programmers/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/q1.java) (2020.01.15.수)
+
+--------------------------------------------
+## 알고리즘 스터디 
+* BOJ & SWEA 2018.04 ~ 2018.10  
+* BOJ & SWEA 2018.12 ~ 2019.02
+--------------------------------------------
+
+
 ### BOJ 
 :ballot_box_with_check: [17140 이차원 배열과 연산](https://hwang11.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/2019/10/03/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-17140-%EC%9D%B4%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4%EA%B3%BC-%EC%97%B0%EC%82%B0/)  
 
@@ -10,16 +25,6 @@
 
 ### Progammers
 ### Expert
---------------------------------------------
-## 알고리즘 스터디 
-* BOJ & SWEA 2018.04 ~ 2018.10  
-* BOJ & SWEA 2018.12 ~ 2019.02
---------------------------------------------
 
-### :fire: 1일 1 알고리즘 챌린지
-기간 : 2020. 1. 15 ~   
-목표 : 프로그래머스 고득점 kit 깨기
 
-### 프로그래머스 고득점 kit  
-* 완전탐색  
-:ballot_box_with_check: [모의고사](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/Programmers/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/q1.java) (2020.01.15.수)
+

@@ -1,4 +1,4 @@
-package practice18;
+package BOJ;
 import java.util.*;
 import java.util.Comparator;
 

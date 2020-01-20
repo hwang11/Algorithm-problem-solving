@@ -1,4 +1,4 @@
-package practice25;
+package BOJ;
 
 import java.util.Scanner;
 

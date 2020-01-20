@@ -1,4 +1,4 @@
-package han;
+package BOJ;
 
 public class number {
 	public static void main(String args[]) {

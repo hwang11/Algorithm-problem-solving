@@ -1,4 +1,4 @@
-package practice13;
+package BOJ;
 import java.util.*;
 public class BubbleSort {
 	public static void main(String args[]) {

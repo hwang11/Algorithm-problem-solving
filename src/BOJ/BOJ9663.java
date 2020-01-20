@@ -1,4 +1,4 @@
-package practice19;
+package BOJ;
 import java.util.*;
 public class BOJ9663 {
 	static int ans, n;

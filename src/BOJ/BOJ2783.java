@@ -1,4 +1,4 @@
-package practice23;
+package BOJ;
 import java.text.DecimalFormat;
 import java.util.*;
 public class BOJ2783 {

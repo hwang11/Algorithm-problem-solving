@@ -1,4 +1,4 @@
-package Algo10;
+package BOJ;
 
 import java.util.Scanner;
 import java.io.FileInputStream;

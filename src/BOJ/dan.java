@@ -1,5 +1,5 @@
 
-package han;
+package BOJ;
 
 import java.util.Scanner;
 //단위행렬 

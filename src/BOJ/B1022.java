@@ -1,3 +1,4 @@
+package BOJ;
 //package Algo7;
 //
 //import java.util.Scanner;

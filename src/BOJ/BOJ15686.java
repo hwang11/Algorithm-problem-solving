@@ -1,4 +1,4 @@
-package practice32;
+package BOJ;
 import java.util.ArrayList;
 //치킨배달. 백트래킹 + 브루트포스.
 import java.util.LinkedList;

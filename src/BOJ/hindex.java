@@ -1,4 +1,4 @@
-package han;
+package BOJ;
 
 public class hindex {
 	public static int solution(int[] arr) {

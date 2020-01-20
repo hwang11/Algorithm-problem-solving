@@ -1,4 +1,4 @@
-package han;
+package BOJ;
 
 import java.util.Scanner;
 //스트링에 담긴 숫자 크기 비교 가능! 인트형으로 변환안해도 

@@ -1,4 +1,4 @@
-package practice25;
+package BOJ;
 import java.util.Scanner;
 //1로만들기.
 public class BOJ1463 {

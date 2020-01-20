@@ -1,4 +1,4 @@
-package han;
+package BOJ;
 
 public class phone {
 	static boolean chk(String a,String b) { // solution함수의 2중 포문안에서 또 돌면 복잡하므로 함수로 뺏음.

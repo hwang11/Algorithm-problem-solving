@@ -1,4 +1,4 @@
-package han;
+package BOJ;
 import java.util.Scanner;
 public class B2941 {
 	public static void main(String args[]) {

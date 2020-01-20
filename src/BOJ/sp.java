@@ -1,4 +1,4 @@
-package han;
+package BOJ;
 
 import java.util.HashMap;
 //의상의 종류 수와, 종류에 해당하는 가지수를 이용하여 구하기 

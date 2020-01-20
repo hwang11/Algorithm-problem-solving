@@ -1,4 +1,4 @@
-	package han;
+	package BOJ;
 
 import java.util.Collections;
 import java.util.Comparator;

@@ -1,4 +1,4 @@
-package han;
+package BOJ;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.Date;
@@ -8,7 +8,7 @@ import java.sql.Timestamp;
 
 public class time {
 	LocalDateTime st = new Timestamp(System.currentTimeMillis()).toLocalDateTime();
-	System.out.print(st);
+	//System.out.print(st);
 }
 
  

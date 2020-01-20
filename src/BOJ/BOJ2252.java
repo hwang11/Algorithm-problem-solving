@@ -1,4 +1,4 @@
-package practice12;
+package BOJ;
 import java.util.*;
 public class BOJ2252 {
 	public static void main(String args[]) {

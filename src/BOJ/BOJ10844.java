@@ -1,4 +1,4 @@
-package practice25;
+package BOJ;
 
 import java.util.Scanner;
 //더한순간에 오버플로 날수도있어서 계속 나눠줌.

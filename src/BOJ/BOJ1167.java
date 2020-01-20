@@ -1,4 +1,4 @@
-package practice24;
+package BOJ;
 import java.util.*;
 public class BOJ1167 {
 	static int v;

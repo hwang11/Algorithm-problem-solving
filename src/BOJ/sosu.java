@@ -1,4 +1,4 @@
-package Algo;
+package BOJ;
 
 public class sosu {
 	static boolean v[];

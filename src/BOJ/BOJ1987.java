@@ -1,4 +1,4 @@
-package practice23;
+package BOJ;
 import java.util.*;
 //알파
 public class BOJ1987 {

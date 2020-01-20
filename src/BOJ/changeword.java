@@ -1,4 +1,4 @@
-package han;
+package BOJ;
 
 public class changeword {
 	static int total;

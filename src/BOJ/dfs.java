@@ -1,4 +1,4 @@
-package Algo10;//DFS 경로찍기 
+package BOJ;//DFS 경로찍기 
 import java.util.Scanner;
 
 public class dfs {

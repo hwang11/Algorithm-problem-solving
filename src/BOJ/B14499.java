@@ -1,4 +1,4 @@
-package Algo10;
+package BOJ;
 import java.util.Scanner;
 //정답 
 public class B14499 {

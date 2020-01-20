@@ -1,4 +1,4 @@
-package Algo3;
+package BOJ;
 
 import java.util.LinkedList;
 import java.util.Queue;

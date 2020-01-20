@@ -1,4 +1,4 @@
-package practice13;
+package BOJ;
 import java.util.*;
 public class BOJ1024 {
 	int sum(int n) {

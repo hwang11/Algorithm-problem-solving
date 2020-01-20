@@ -1,4 +1,4 @@
-package Algo8;
+package BOJ;
 
 import java.io.IOException;
 import java.util.ArrayList;

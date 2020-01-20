@@ -1,4 +1,4 @@
-package Algo10;
+package BOJ;
 
 import java.util.Scanner;
 //브루트포스 for문 이용 

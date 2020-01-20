@@ -1,4 +1,4 @@
-package han;
+package BOJ;
 
 public class binary {
 	public static void main(String args[]) {

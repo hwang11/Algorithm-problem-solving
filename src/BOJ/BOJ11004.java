@@ -1,4 +1,4 @@
-package practice13;
+package BOJ;
 import java.util.*;
 import java.io.*;
 //시간 줄여야하는문제 InputStream사용.

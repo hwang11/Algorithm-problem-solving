@@ -1,4 +1,4 @@
-package Algo;
+package BOJ;
 
 public class level21 {
 	static int fibo(int n) {

@@ -1,4 +1,4 @@
-package han;
+package BOJ;
 
 public class truck {
 	public int solution(int bridge_length, int weight, int[] truck_weights) {

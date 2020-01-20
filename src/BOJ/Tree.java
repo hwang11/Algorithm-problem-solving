@@ -1,4 +1,4 @@
-package practice22;
+package BOJ;
 import java.util.*;
 public class Tree {
 	public Node root;

@@ -1,4 +1,4 @@
-package Algo6;
+package BOJ;
 
 import java.io.*;
 import java.util.PriorityQueue;

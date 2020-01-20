@@ -1,4 +1,4 @@
-package han;
+package BOJ;
 
 public class pal {
 	static boolean chk(String s) {

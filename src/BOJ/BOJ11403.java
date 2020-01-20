@@ -1,3 +1,4 @@
+package BOJ;
 import java.util.*;
 public class BOJ11403 {
 	static int[] visited = new int[100];

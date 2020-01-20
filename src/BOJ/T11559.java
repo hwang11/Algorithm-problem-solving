@@ -1,4 +1,4 @@
-package Algo5;
+package BOJ;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

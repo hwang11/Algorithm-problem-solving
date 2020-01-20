@@ -1,4 +1,4 @@
-package han;
+package BOJ;
 
 import java.util.Scanner;
 //가장 많이 등장한 숫자 출력 

@@ -1,4 +1,4 @@
-package practice13;
+package BOJ;
 import java.util.*;
 //두 배열 다 정렬해서 인덱스 거꾸로 곱하면됨..
 public class BOJ1026 {

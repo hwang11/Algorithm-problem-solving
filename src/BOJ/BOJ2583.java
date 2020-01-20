@@ -1,4 +1,4 @@
-package practice10;
+package BOJ;
 import java.util.*;
 public class BOJ2583 {
 	Scanner sc = new Scanner(System.in);

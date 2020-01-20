@@ -1,4 +1,4 @@
-package practice25;
+package BOJ;
 import java.util.Scanner;
 // 1,2,3더하기. 
 public class BOJ9095 {

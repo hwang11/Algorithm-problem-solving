@@ -1,4 +1,4 @@
-package Asamsung;
+package BOJ;
 
 import java.util.Scanner;
 

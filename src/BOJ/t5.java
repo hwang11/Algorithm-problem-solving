@@ -1,4 +1,4 @@
-package Algo10;
+package BOJ;
 
 import java.util.Scanner;
 //2차원 배열에서 1차원 배열로 바꿨더니 성공 

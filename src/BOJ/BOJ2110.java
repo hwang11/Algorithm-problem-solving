@@ -1,4 +1,4 @@
-package practice20;
+package BOJ;
 //공유기설치.
 import java.util.*;
 public class BOJ2110 {

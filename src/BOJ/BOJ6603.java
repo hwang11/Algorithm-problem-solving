@@ -1,4 +1,4 @@
-package Expert;
+package BOJ;
 
 import java.util.Scanner;
 

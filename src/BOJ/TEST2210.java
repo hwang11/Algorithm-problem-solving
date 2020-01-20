@@ -1,4 +1,4 @@
-package practice26;
+package BOJ;
 
 public class TEST2210 {
 

@@ -1,4 +1,4 @@
-package practice25;
+package BOJ;
 
 import java.util.Scanner;
 //누적합이 음수면, 더해주지 않고. 거기부터 새로dp배열시작.

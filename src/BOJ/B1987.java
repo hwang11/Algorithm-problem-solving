@@ -1,4 +1,4 @@
-package Algo4;
+package BOJ;
 
 import java.util.Scanner;
 

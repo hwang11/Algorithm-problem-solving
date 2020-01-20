@@ -1,3 +1,4 @@
+package BOJ;
 import java.util.*;
 public class BOJ2822 {
 	public static void main(String args[]) {

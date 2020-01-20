@@ -22,7 +22,6 @@ public class q1 {
 			pq.add(n);
 			answer++;
 		}
-		System.out.println(answer);
 		return answer;
 	}
 

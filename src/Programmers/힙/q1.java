@@ -6,7 +6,6 @@ import java.util.PriorityQueue;
 
 public class q1 {
 	static PriorityQueue<Integer> pq;
-
 	static public int solution(int[] scoville, int K) {
 		int answer = 0;
 		Arrays.sort(scoville);

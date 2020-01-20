@@ -7,6 +7,9 @@
 * 완전탐색  
 :ballot_box_with_check: [모의고사](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/Programmers/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/q1.java) (2020.01.15.수)
 
+* 힙  
+:ballot_box_with_check: [더 맵게](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/Programmers/%ED%9E%99/q1.java) (2020.01.20.월)
+
 --------------------------------------------
 ## 알고리즘 스터디 
 * BOJ & SWEA 2018.04 ~ 2018.10  

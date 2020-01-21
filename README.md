@@ -1,5 +1,5 @@
 # 알고리즘 문제 풀이   
-### :fire: 1일 1 알고리즘 챌린지
+## :fire: 1일 1 알고리즘 챌린지
 기간 : 2020. 1. 15 ~   
 
 ### 프로그래머스 고득점 kit  
@@ -10,8 +10,8 @@
 :ballot_box_with_check: [더 맵게](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/Programmers/%ED%9E%99/q1.java) (2020.01.20.월)
 
 ### BOJ 
-* 큐
-:ballot_box_with_check: [1966 프린터 큐](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/StackQueue/B1966.java)(2020.01.21.화)  
+* 큐  
+:ballot_box_with_check: [1966 프린터 큐](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/StackQueue/B1966.java) (2020.01.21.화)  
 
 :ballot_box_with_check: [17140 이차원 배열과 연산](https://hwang11.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/2019/10/03/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-17140-%EC%9D%B4%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4%EA%B3%BC-%EC%97%B0%EC%82%B0/)  
 

@@ -15,7 +15,7 @@
 :ballot_box_with_check: 빈도수 우선 큐 (2020.01.22.수) 
 
 * Map  
-:ballot_box_with_check: [카드] (2020.01.23.목)
+:ballot_box_with_check: 카드 (2020.01.23.목)
 
 :ballot_box_with_check: [17140 이차원 배열과 연산](https://hwang11.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/2019/10/03/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-17140-%EC%9D%B4%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4%EA%B3%BC-%EC%97%B0%EC%82%B0/)  
 

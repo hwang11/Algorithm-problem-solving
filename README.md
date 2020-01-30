@@ -11,10 +11,7 @@
 
 * DFS/BFS  
 :ballot_box_with_check: [여행경로](https://hwang11.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/2020/01/24/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%97%AC%ED%96%89%EA%B2%BD%EB%A1%9C/) (2020.01.24.금)  
-:ballot_box_with_check: [n과 m (1)](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/permu/B15649.java) (2020.01.29.수)  
-:ballot_box_with_check: [n과 m (2)](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/permu/B15650.java) (2020.01.29.수)  
-:ballot_box_with_check: [n과 m (3)](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/permu/B15651.java) (2020.01.29.수)  
-:ballot_box_with_check: [비숍](https://hwang11.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/2020/01/30/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-1799-%EB%B9%84%EC%88%8D/) (2020.01.30.목)
+
 
 
 ### BOJ 
@@ -23,7 +20,13 @@
 :ballot_box_with_check: 빈도수 우선 큐 (2020.01.22.수) 
 
 * Map  
-:ballot_box_with_check: 카드 (2020.01.23.목)
+:ballot_box_with_check: 카드 (2020.01.23.목)  
+
+* DFS/BFS  
+:ballot_box_with_check: [n과 m (1)](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/permu/B15649.java) (2020.01.29.수)  
+:ballot_box_with_check: [n과 m (2)](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/permu/B15650.java) (2020.01.29.수)  
+:ballot_box_with_check: [n과 m (3)](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/permu/B15651.java) (2020.01.29.수)  
+:ballot_box_with_check: [비숍](https://hwang11.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/2020/01/30/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-1799-%EB%B9%84%EC%88%8D/) (2020.01.30.목)
 
 :ballot_box_with_check: [17140 이차원 배열과 연산](https://hwang11.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/2019/10/03/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-17140-%EC%9D%B4%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4%EA%B3%BC-%EC%97%B0%EC%82%B0/)  
 

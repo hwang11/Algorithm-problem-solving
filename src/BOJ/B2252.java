@@ -28,7 +28,6 @@ public class B2252 {
 		}
 		while(!q.isEmpty()) {
 			int cur = q.poll();
-			System.out.print(cur+" ");
 			for(int i=0;i<list[cur].size();i++) {
 				int next = list[cur].get(i);
 				indegree[next]--;

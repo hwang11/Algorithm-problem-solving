@@ -27,7 +27,12 @@
 :heavy_check_mark: [n과 m (1)](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/permu/B15649.java) (2020.01.29.수)  
 :heavy_check_mark: [n과 m (2)](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/permu/B15650.java) (2020.01.29.수)  
 :heavy_check_mark: [n과 m (3)](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/permu/B15651.java) (2020.01.29.수)  
-:heavy_check_mark: [비숍](https://hwang11.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/2020/01/30/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-1799-%EB%B9%84%EC%88%8D/) (2020.01.30.목)
+:heavy_check_mark: [비숍](https://hwang11.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/2020/01/30/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-1799-%EB%B9%84%EC%88%8D/) (2020.01.30.목)  
+
+* 위상정렬  
+:heavy_check_mark: [문제집](https://hwang11.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/2020/01/31/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-1766-%EB%AC%B8%EC%A0%9C%EC%A7%91/) (2020.01.31.금)  
+:heavy_check_mark: [게임개발](https://hwang11.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/2020/01/31/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B2%8C%EC%9E%84%EA%B0%9C%EB%B0%9C/) (2020.01.31.금)  
+:heavy_check_mark: [줄세우기](https://github.com/hwang11/Algorithm-problem-solving/blob/master/src/BOJ/B2252.java) (2020.01.31.금)
 
 :heavy_check_mark: [17140 이차원 배열과 연산](https://hwang11.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/2019/10/03/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-17140-%EC%9D%B4%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4%EA%B3%BC-%EC%97%B0%EC%82%B0/)  
 

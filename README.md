@@ -33,7 +33,7 @@
 
 * 시뮬레이션  
 :heavy_check_mark: 새로운게임 2 (2020.02.07.금)  
-:heavy_check_mark: 원판돌리기 (2020.02.10.월) 
+:heavy_check_mark: 원판돌리기 (2020.02.10.월)   
 :heavy_check_mark: 드래곤커브 (2020.02.12.수)
 
 :heavy_check_mark: 17140 이차원 배열과 연산  

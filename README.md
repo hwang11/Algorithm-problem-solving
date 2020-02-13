@@ -12,6 +12,8 @@
 * DFS/BFS  
 :heavy_check_mark: 여행경로 (2020.01.24.금) 
 
+* 스택/큐  
+:heavy_check_mark: 쇠막대기 (2020.02.13.목)
 ### BOJ  
 * 큐  
 :heavy_check_mark: 1966 프린터 큐 (2020.01.21.화)  

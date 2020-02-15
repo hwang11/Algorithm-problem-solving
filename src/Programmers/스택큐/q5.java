@@ -1,7 +1,6 @@
 package Programmers.스택큐;
 
 import java.util.Stack;
-
 public class q5 {
 	public static int solution(String arrangement) {
         int answer = 0;

@@ -24,6 +24,5 @@ public class q5 {
     }
 	public static void main(String[] args) {
 		System.out.println(solution("()(((()())(())()))(())"));
-		//System.out.println(solution("(((()(()()))(())()))(()())"));
 	}
 }

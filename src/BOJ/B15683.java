@@ -1,270 +1,147 @@
 package BOJ;
 
 import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
 
 public class B15683 {
-	static int n, m, min, ans;
-	static int map[][][];
-	static int cur[][][];
+	static int N,M,cnt,ans;
+	static int arr[][];
+	static int tmp[][];
 	static LinkedList<Dot> li;
-	static int dis1[][] = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };// 상하좌우
-	static int dis2[][][] = { { { -1, 0 }, { 1, 0 } }, { { 0, -1 }, { 0, 1 } } };
-	static int dis3[][][] = { { { -1, 0 }, { 0, 1 } }, { { 1, 0 }, { 0, 1 } }, { { 1, 0 }, { 0, -1 } },
-			{ { -1, 0 }, { 0, -1 } } }; // 상우 / 하우 / 하좌/ 상좌
-	static int dis4[][][] = { { { -1, 0 }, { 1, 0 }, { 0, 1 } }, { { -1, 0 }, { 0, -1 }, { 0, 1 } },
-			{ { 1, 0 }, { 0, -1 }, { 0, 1 } }, { { -1, 0 }, { 1, 0 }, { 0, -1 } } };
-	static int dis5[][] = { { 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 } };
-	static boolean v1[];
-	static boolean v2[][];
-
-	public static void remem(int cnt) {
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; j++) {
-				cur[cnt][i][j] = map[0][i][j];
+	static int dr[][] = {{0,0},{0,1},{0,-1},{-1,0},{1,0}};  // 우 좌 상 하 
+	static void go(int x,int y,int d) {
+		int nx = x;int ny = y;
+		while(true) {
+			nx += dr[d][0];
+			ny += dr[d][1];
+			if(nx >= N || ny >= M || nx < 0 || ny < 0) break;
+			if(tmp[nx][ny]==6) break;
+			tmp[nx][ny] = 7;
+		}
+	}
+	static void fill(int idx) {
+		int num = li.get(idx).c;
+		int dn = li.get(idx).r;		
+		int x = li.get(idx).x;
+		int y = li.get(idx).y;
+		if(num == 1) {
+			go(x,y,dn+1);
+		}
+		else if(num == 2) {
+			if(dn%2==0) {
+				go(x,y,1);
+				go(x,y,2);
+			}
+			else{
+				go(x,y,3);
+				go(x,y,4);
+			}
+		}
+		else if(num == 3) {
+			if(dn==0) {
+				go(x,y,3); //상 
+				go(x,y,1); //우 
+			}else if(dn==1) {
+				//우 하 
+				go(x,y,1);
+				go(x,y,4);
+			}else if(dn==2) {
+				//좌하 
+				go(x,y,2);
+				go(x,y,4);
+			}else {
+				//좌상 
+				go(x,y,2);
+				go(x,y,3);
+			}
+		}
+		else if(num == 4){
+			if(dn==0) {
+				//우상좌 
+				go(x,y,1);
+				go(x,y,2);
+				go(x,y,3);
+			}
+			else if(dn==1) {
+				//상하우 
+				go(x,y,3);
+				go(x,y,4);
+				go(x,y,1);
+			}
+			else if(dn==2) {
+				//우좌하 
+				go(x,y,1);
+				go(x,y,2);
+				go(x,y,4);
+			}
+			else {
+				//상하좌 
+				go(x,y,3);
+				go(x,y,4);
+				go(x,y,2);
+			}
+		}
+		else {
+			go(x,y,1);
+			go(x,y,2);
+			go(x,y,3);
+			go(x,y,4);
+		}
+	}
+	static void init() {
+		for(int i=0;i<N;i++) {
+			for(int j=0;j<M;j++) {
+				tmp[i][j] = arr[i][j];
 			}
 		}
 	}
-	public static void print() {
-		//System.out.println("print합니다.");
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; j++) {
-				System.out.print(map[0][i][j]+" ");
+	static void dfs(int dep) {
+		if(dep == li.size()) {
+			init();
+			for(int i=0;i<li.size();i++) {
+				fill(i);
 			}
-			System.out.println();
-		}
-	}
-	public static void back(int cnt) {
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; j++) {
-				map[0][i][j] = cur[cnt][i][j];
-			}
-		}
-	}
-
-	public static int count() {
-		min = 0;
-		//System.out.println();
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; j++) {
-				if (map[0][i][j] == 0) min++;
-				//System.out.print(map[0][i][j]+" ");
-			}
-			//System.out.println();
-		}
-		//System.out.println("min: "+min);
-		return min;
-	}
-
-
-	public static void dfs(int cnt) {
-		if (cnt == li.size()) {
-			ans = Math.min(ans, count());
-			
+			ans = Math.min(count(), ans);
 			return;
 		}
-		for (int i = 0; i < li.size(); i++) {
-			Dot dot = li.get(i);
-			if (v1[i])
-				continue;
-			switch (map[0][li.get(i).y][li.get(i).x]) {
-			case 1:
-				for (int j = 0; j < 4; j++) {
-					if (v2[i][j])
-						continue;
-					v1[i] = true;
-					v2[i][j] = true;
-					remem(cnt);
-					Queue<Dot> q = new LinkedList<Dot>();
-					q.add(new Dot(dot.y,dot.x));
-					while(!q.isEmpty()) {
-						Dot p = q.poll(); 
-						int ny = p.y + dis1[j][0];
-						int nx = p.x + dis1[j][1];
-						if (ny < 0 || nx < 0 || ny >= n || nx >= m)
-							break;
-						if (map[0][ny][nx] == 6)
-							break;
-						//System.out.printf("비춘다 ny : %d, nx %d\n",ny,nx);
-						map[0][ny][nx] = 7; // cctv가 비추는 부분
-						q.add(new Dot(ny,nx));
-					}
-					
-					dfs(cnt+1);
-					v2[i][j] = false;
-					back(cnt);
-
-					//print(map);
-				}
-				break;
-			case 2:
-				for (int j = 0; j < 2; j++) { //방향 개수 만큼 
-					if (v2[i][j])
-						continue;
-					v1[i] = true;
-					v2[i][j] = true;
-					remem(cnt);
-
-					//System.out.println("2를 칠하기 전 ");
-					//print();
-					for (int k = 0; k < 2; k++) {
-						Queue<Dot> q = new LinkedList<Dot>();
-						q.add(new Dot(dot.y,dot.x));
-						while(!q.isEmpty()) {
-							Dot p = q.poll();
-							int ny = p.y + dis2[j][k][0];
-							int nx = p.x + dis2[j][k][1];
-							if (ny < 0 || nx < 0 || ny >= n || nx >= m)
-								break;
-							if (map[0][ny][nx] == 6)
-								break;
-							map[0][ny][nx] = 7; // cctv가 비추는 부분
-							q.add(new Dot(ny,nx));
-						}
-					}
-					dfs(cnt+1);
-					v2[i][j] = false;
-					back(cnt);
-					//System.out.printf("되돌아갑니다 %d\n",cnt);
-					//print();
-				}
-
-				break;
-			case 3:
-				for (int j = 0; j < 4; j++) {
-					if (v2[i][j])
-						continue;
-					v1[i] = true;
-					v2[i][j] = true;
-					remem(cnt);
-
-					// 상우 / 하우 / 하좌/ 상좌
-					
-					for (int k = 0; k < 2; k++) {
-						Queue<Dot> q = new LinkedList<Dot>();
-						q.add(new Dot(dot.y,dot.x));
-						while(!q.isEmpty()) {
-							Dot p = q.poll();
-							int ny = p.y + dis3[j][k][0];
-							int nx = p.x + dis3[j][k][1];
-							if (ny < 0 || nx < 0 || ny >= n || nx >= m)
-								break;
-							if (map[0][ny][nx] == 6)
-								break;
-							map[0][ny][nx] = 7; // cctv가 비추는 부분
-							q.add(new Dot(ny,nx));
-						}
-					}
-					dfs(cnt+1);
-					v2[i][j] = false;
-					back(cnt);
-
-
-				}
-				break;
-			case 4:
-				for (int j = 0; j < 4; j++) {
-					if (v2[i][j])
-						continue;
-					v1[i] = true;
-					v2[i][j] = true;
-					remem(cnt);
-
-					for (int k = 0; k < 3; k++) {
-						Queue<Dot> q = new LinkedList<Dot>();
-						q.add(new Dot(dot.y,dot.x));
-						while(!q.isEmpty()) {
-							Dot p = q.poll();
-
-							int ny = p.y + dis4[j][k][0];
-							int nx = p.x + dis4[j][k][1];
-							if (ny < 0 || nx < 0 || ny >= n || nx >= m)
-								break;
-							if (map[0][ny][nx] == 6)
-								break;
-							map[0][ny][nx] = 7; // cctv가 비추는 부분
-							q.add(new Dot(ny,nx));
-						}
-					}
-					dfs(cnt+1);
-					v2[i][j] = false;
-					back(cnt);
-
-				}
-				break;
-			case 5:
-				for (int j = 0; j < 1; j++) {
-					if (v2[i][j])
-						continue;
-					v1[i] = true;
-					v2[i][j] = true;
-					remem(cnt);
-					//System.out.println("5를 칠하기 전 ");
-					//print();
-					for (int k = 0; k < 4; k++) {
-						Queue<Dot> q = new LinkedList<Dot>();
-						q.add(new Dot(dot.y,dot.x));
-						while(!q.isEmpty()) {
-							Dot p = q.poll();
-
-							int ny = p.y + dis5[k][0];
-							int nx = p.x + dis5[k][1];
-							if (ny < 0 || nx < 0 || ny >= n || nx >= m)
-								break;
-							if (map[0][ny][nx] == 6)
-								break;
-							map[0][ny][nx] = 7; // cctv가 비추는 부분
-							q.add(new Dot(ny,nx));
-						}
-					}
-					dfs(cnt+1);
-					v2[i][j] = false;
-					//System.out.printf("되돌아갑니다 %d\n",cnt);
-					back(cnt);
-					//print();
-
-				}
-				break;
-			}
-//			dfs(cnt+1);
-//			back();
-			v1[i] = false;
-			
+		for(int i=0;i<4;i++) {
+			li.get(dep).r = i;
+			dfs(dep+1);
 		}
-
-	}
-
-	public static void main(String args[]) {
-		Scanner sc = new Scanner(System.in);
-		n = sc.nextInt();
-		m = sc.nextInt();
-		map = new int[1][n][m];
 		
-		li = new LinkedList<Dot>();
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; j++) {
-				map[0][i][j] = sc.nextInt();
-				if (map[0][i][j] > 0 && map[0][i][j] < 6) { // cctv의 위치를 리스트에 저장
-					li.add(new Dot(i, j));
-				}
+	}
+	static int count() {
+		cnt = 0;
+		for(int i=0;i<N;i++) {
+			for(int j=0;j<M;j++) {
+				if(tmp[i][j]==0) cnt++;
 			}
 		}
-		cur = new int[li.size()][n][m];
-		v1 = new boolean[li.size()];
-		v2 = new boolean[li.size()][4];
+		return cnt;
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		N = sc.nextInt();
+		M = sc.nextInt();
+		arr = new int[N][M];
+		tmp = new int[N][M];
+		li = new LinkedList<Dot>();
 		ans = Integer.MAX_VALUE;
+		for(int i=0;i<N;i++) {
+			for(int j=0;j<M;j++) {
+				arr[i][j] = sc.nextInt();
+				if(arr[i][j] > 0 && arr[i][j] < 6) li.add(new Dot(arr[i][j],i,j));
+			}
+		}
 		dfs(0);
 		System.out.println(ans);
 	}
-
-	public static class Dot {
-		int x;
-		int y;
-
-		public Dot(int y, int x) {
-			this.y = y;
+	static class Dot{
+		int c,x,y,r;
+		public Dot(int c,int x,int y) {
+			this.c = c;
 			this.x = x;
+			this.y = y;
 		}
 	}
 }
